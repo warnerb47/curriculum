@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mouhamadou Moustapha Gaye - CV</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function printPage() {
+            window.print();
+        }
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-800">
     <div class="max-w-5xl mx-auto bg-white shadow-sm my-8 p-8 md:p-12">
@@ -12,7 +17,7 @@
         <header class="border-b border-gray-200 pb-6 mb-8">
             <div class="flex justify-between items-start mb-4">
                 <div>
-                    <p class="text-xs uppercase tracking-wider text-gray-500 mb-1">Curriculum Vitae</p>
+                    <p class="print:hidden text-xs uppercase tracking-wider text-gray-500 mb-1">Curriculum Vitae</p>
                     <h1 class="text-4xl font-bold text-gray-900 mb-2">Mouhamadou Moustapha Gaye</h1>
                     <p class="text-lg text-gray-600">Lead Frontend Developer · Dakar, Senegal</p>
                 </div>
@@ -23,10 +28,10 @@
                 </div>
             </div>
             
-            <div class="flex gap-2 mb-6">
+            <div class="print:hidden flex gap-2 mb-6">
                 <a href="./cv-en.html" class="px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded transition">English</a>
                 <a href="./cv-fr.html" class="px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded transition">Français</a>
-                <a href="./assets/cv-en.pdf" download class="px-4 py-2 text-sm bg-blue-600 text-white hover:bg-blue-700 rounded transition">Download PDF</a >
+                <button onclick="printPage()" class="px-4 py-2 text-sm bg-blue-600 text-white hover:bg-blue-700 rounded transition">Download PDF</button >
             </div>
             
             <p class="text-gray-700 leading-relaxed">
@@ -36,7 +41,7 @@
 
         <div class="grid md:grid-cols-3 gap-8">
             <!-- Main Content -->
-            <div class="md:col-span-2">
+            <div class="md:col-span-2 order-2 md:order-1">
                 <section class="mb-10">
                     <h2 class="text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Work Experience</h2>
                     
@@ -149,26 +154,30 @@
             </div>
 
             <!-- Sidebar -->
-            <div class="md:col-span-1">
+            <div class="md:col-span-1 order-1 md:order-2">
 
                 <section class="mb-8">
-                    <h2 class="text-lg font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Tools & Stack</h2>
+                    <h2 class="text-lg font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Skills</h2>
                     <div class="space-y-3 text-xs">
                         <div>
-                            <p class="font-semibold text-gray-700 mb-1">Frontend</p>
-                            <p class="text-gray-600">Express.js, RxJS, Redux, Strapi, Ansible, AWS</p>
+                            <p class="font-semibold text-gray-700 mb-1">Frontend Development</p>
+                            <p class="text-gray-600">Angular, Tailwind CSS, RXJS, Nx, Storybook, Jest, Redux, Flutter, Ionic</p>
                         </div>
                         <div>
-                            <p class="font-semibold text-gray-700 mb-1">Backend</p>
-                            <p class="text-gray-600">GraphQL, REST APIs, RabbitMQ, Docker Swarm</p>
+                            <p class="font-semibold text-gray-700 mb-1">Backend Development</p>
+                            <p class="text-gray-600">Node JS, Express JS, Nest JS, Camunda, GraphQL, KeystoneJS, Microservices, Python, RabbitMQ, REST APIs, Strapi</p>
                         </div>
                         <div>
-                            <p class="font-semibold text-gray-700 mb-1">DevOps</p>
-                            <p class="text-gray-600">ELK Stack, Grafana, Prometheus, Terraform, Vagrant</p>
+                            <p class="font-semibold text-gray-700 mb-1">DevOps & Infrastructure</p>
+                            <p class="text-gray-600">Ansible, Apache, AWS, Bitbucket Pipeline, Docker Swarm, ELK, Grafana, Jenkins, Nginx, Portainer, Prometheus, Terraform, Vagrant</p>
                         </div>
                         <div>
-                            <p class="font-semibold text-gray-700 mb-1">Database</p>
-                            <p class="text-gray-600">Meilisearch, Redis, OpenMRS</p>
+                            <p class="font-semibold text-gray-700 mb-1">Data & Storage</p>
+                            <p class="text-gray-600">Meilisearch, MongoDB, MySQL, PostgreSQL, Redis, Apache NiFi</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-700 mb-1">HealthTech</p>
+                            <p class="text-gray-600">FHIR, HL7, Open Concept Lab, OpenMRS</p>
                         </div>
                     </div>
                 </section>
@@ -191,31 +200,10 @@
                     </div>
                 </section>
 
-                <section class="mb-8">
-                    <h2 class="text-lg font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Core Skills</h2>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Angular</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Tailwind CSS</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Nx Monorepo</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Storybook</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Camunda BPM</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Node.js</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">NestJS</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">GraphQL</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Microservices</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Terraform</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">CI/CD</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Docker</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">MongoDB</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">PostgreSQL</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">FHIR / HL7</span>
-                    </div>
-                </section>
-
             </div>
         </div>
 
-        <footer class="mt-12 pt-6 border-t border-gray-200 text-center text-xs text-gray-500">
+        <footer class="print:hidden mt-12 pt-6 border-t border-gray-200 text-center text-xs text-gray-500">
             © 2026 warnerb47
         </footer>
     </div>
