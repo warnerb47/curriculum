@@ -106,3 +106,19 @@ Web/Mobile Development: Angular, Flutter, Ionic, Jest, Nx, Redux, RXJS, Storyboo
 Database: Meilisearch, MongoDB, MySQL, PostgreSQL, Redis
 
 HealthTech: FHIR, HL7, Open Concept Lab, OpenMRS
+
+Domain Strengths
+
+Healthcare Interoperability: Designed and implemented FHIR v4-based data exchange architectures for EMR systems.
+
+Digital Transformation & Business Process Automation: 
+Design and implementation of BPMN workflows using Camunda 8, Built workflow-driven applications that accelerated task routing and approval cycles.
+
+Frontend Architecture & Scalable UI Systems: 
+Built reusable component library with Storybook, architected and maintained Nx monorepos with shared libraries.
+
+DevOps & Platform Engineering:
+Implemented end-to-end CI/CD pipelines (Bitbucket, Jenkins) and Infrastructure as Code (Terraform, Ansible), Introduzed monitoring stacks (ELK, Grafana, Prometheus),Containerized applications with Docker Swarm and managed orchestration via Portainer.
+
+Team Leadership & Developer Enablement:
+Mentored junior developers increasing team autonomy, Established coding standards and documentation, Led technical decision-making and architecture planning.

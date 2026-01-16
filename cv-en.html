@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mouhamadou Moustapha Gaye - CV</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        function printPage() {
-            window.print();
-        }
-    </script>
 </head>
 <body class="bg-gray-50 text-gray-800">
     <div class="max-w-5xl mx-auto bg-white shadow-sm my-8 p-8 md:p-12">
@@ -17,7 +12,14 @@
         <header class="border-b border-gray-200 pb-6 mb-8">
             <div class="flex justify-between items-start mb-4">
                 <div>
-                    <p class="print:hidden text-xs uppercase tracking-wider text-gray-500 mb-1">Curriculum Vitae</p>
+                    <div class="">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-1">Curriculum Vitae</p>
+                        <div class="print:hidden flex gap-2 mb-6">
+                            <a href="./cv-en.html" class="px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded transition">English</a>
+                            <a href="./cv-fr.html" class="px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded transition">Français</a>
+                            <a href="./assets/cv-en.pdf" download class="px-4 py-2 text-sm bg-blue-600 text-white hover:bg-blue-700 rounded transition">Download PDF</a>
+                        </div>
+                    </div>
                     <h1 class="text-4xl font-bold text-gray-900 mb-2">Mouhamadou Moustapha Gaye</h1>
                     <p class="text-lg text-gray-600">Lead Frontend Developer · Dakar, Senegal</p>
                 </div>
@@ -26,12 +28,6 @@
                     <p class="text-gray-600">mouhamadoumoustaphagaye@esp.sn</p>
                     <a href="https://github.com/warnerb47" class="text-blue-600 hover:underline">github.com/warnerb47</a>
                 </div>
-            </div>
-            
-            <div class="print:hidden flex gap-2 mb-6">
-                <a href="./cv-en.html" class="px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded transition">English</a>
-                <a href="./cv-fr.html" class="px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded transition">Français</a>
-                <button onclick="printPage()" class="px-4 py-2 text-sm bg-blue-600 text-white hover:bg-blue-700 rounded transition">Download PDF</button >
             </div>
             
             <p class="text-gray-700 leading-relaxed">
@@ -54,13 +50,14 @@
                             </div>
                             <span class="text-sm text-gray-500">03/2024 - Present</span>
                         </div>
-                        <p class="text-sm text-gray-700 italic mb-3">Digitalization and automation of land administration processes via BPMN workflows and GIS integration</p>
+                        <p class="text-sm text-gray-700 italic mb-3">Digitalization and automation of land administration business processes through BPMN workflow modeling and GIS integration</p>
                         <ul class="space-y-2 text-sm text-gray-700">
                             <li class="pl-4 border-l-2 border-gray-200">Worked within an Nx monorepo architecture comprising two interconnected applications and two shared libraries, improving code reuse and maintainability across the platform</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Developed and maintained a component library with Storybook, creating 30+ reusable components that reduced feature development time by 35% and ensured 95% design consistency</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Built BPMN-powered workflow app accelerating routing and task completion</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Modeled 15 processes, reducing manual handling from 7 days to 48 hours</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Integrated GIS for spatial visualization and parcel editing within the platform</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Developed and maintained a component library with Storybook, creating 30+ reusable components that reduced feature development time by 35% and ensured 95% design consistency across applications.</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Built a web application for land-administration workflow management, implementing complex BPMN-based processes, which accelerated task routing and reduced processing delays</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Created a library to abstract Camunda BPM engine integration, enabling seamless workflow orchestration across the platform</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Modeled 15 land administration business processes using BPMN, automating workflows and reducing manual processing time from 7 days to 48 hours.</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Integrated Geographic Information System (GIS) components for spatial data visualization and land-parcel management, enabling users to view and edit parcel boundaries directly within the platform</li>
                         </ul>
                     </div>
 
@@ -74,11 +71,11 @@
                             <span class="text-sm text-gray-500">03/2023 - 03/2024</span>
                         </div>
                         <ul class="space-y-2 text-sm text-gray-700">
-                            <li class="pl-4 border-l-2 border-gray-200">Led a 2-person frontend team delivering an Angular/Tailwind EMR aligned with FHIR v4</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Designed custom FHIR facade supporting Patient, Observation, Encounter resources with 95% accuracy</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Mentored developers through code reviews and pairing, boosting autonomy 60%</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Introduced SDLC best practices and Terraform-driven deployments for faster releases</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Built 30+ reusable UI components improving performance and UX smoothness</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Led a 2-developer frontend team and developed the EMR application with Angular and Tailwind, following the FHIR v4 standard, which enabled standardized patient data handling across the system</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Designed and implemented FHIR data exchange architecture with custom facade supporting 3 FHIR resource types (Patient, Observation, and Encounter), interoperability with 2 external health information systems at 95% data accuracy.</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Mentored 2 developers (junior mobile, mid-level web) through code reviews and pair programming, accelerating their autonomous delivery by 60% within 3 months.</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Optimized the software development lifecycle by introducing best practices, code reviews, and streamlined deployment processes with Terraform, resulting in faster release cycles and fewer defects</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Built 30+ reusable Angular/Tailwind components, reducing UI development time and improving frontend performance, which delivered smoother user interactions</li>
                         </ul>
                     </div>
 
@@ -91,28 +88,45 @@
                             </div>
                             <span class="text-sm text-gray-500">12/2022 - 02/2023</span>
                         </div>
+                        <p class="text-sm text-gray-700 italic mb-3">Technical leadership and architecture design for the Logika project, managing a team of 3 developers (1 mid-level backend, 2 junior frontend)</p>
                         <ul class="space-y-2 text-sm text-gray-700">
-                            <li class="pl-4 border-l-2 border-gray-200">Owned technology stack decisions (Angular, Node.js, MongoDB) and architecture</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Established standards, branching strategy, and CI/CD pipelines for quality</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Bootstrapped documentation with Docusaurus for onboarding and best practices</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Mentored juniors, halving PR turnaround and enabling independent delivery</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Defined the complete technology stack (Angular, Node.js, MongoDB) and designed a monolithic architecture that met project requirements, enabling a unified codebase and simplifying integration across teams</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Established development standards and workflows: initialized project structure, implemented Git branching strategy, and set up CI/CD pipelines to ensure consistent code quality</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Built technical documentation foundation using Docusaurus, creating a knowledge base for onboarding and maintaining development best practices</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Mentored 2 junior frontend developers through code reviews and pair programming, reducing their PR turnaround time by 50% and enabling independent feature delivery within 2 months</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Provided ongoing technical support and architectural guidance to ensure team alignment and project delivery</li>
                         </ul>
                     </div>
 
-                    <!-- LOGIDOO -->
+                    <!-- LOGIDOO DevOps -->
                     <div class="mb-8">
                         <div class="flex justify-between items-start mb-2">
                             <div>
                                 <h3 class="font-bold text-gray-900">XFactory - Logidoo</h3>
-                                <p class="text-sm text-gray-600">DevOps & Backend Developer · Dakar</p>
+                                <p class="text-sm text-gray-600">DevOps · Dakar</p>
                             </div>
-                            <span class="text-sm text-gray-500">03/2022 - 11/2022</span>
+                            <span class="text-sm text-gray-500">06/2022 - 11/2022</span>
                         </div>
                         <ul class="space-y-2 text-sm text-gray-700">
-                            <li class="pl-4 border-l-2 border-gray-200">Adopted DevOps practices with IaC & CI/CD, raising deployment speed 60%</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Implemented monitoring stack reducing downtime by 30%</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Split Express monolith into three NestJS microservices, cutting latency 57%</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Applied Dijkstra's algorithm to optimize 500+ daily shipment routes</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Integrated DevOps practices into the development process, enhancing deployment speed by 60% through IaC and CI/CD implementation within 4 months.</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Improved system reliability by implementing comprehensive monitoring solutions, resulting a 30% reduction in downtime within 2 months.</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Streamlined collaboration between development and operations by introducing shared Jenkins pipelines and Slack communication channels, which promoted ongoing process improvements</li>
+                        </ul>
+                    </div>
+
+                    <!-- LOGIDOO Backend Developer -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="font-bold text-gray-900">XFactory - Logidoo</h3>
+                                <p class="text-sm text-gray-600">Backend Developer · Dakar</p>
+                            </div>
+                            <span class="text-sm text-gray-500">03/2022 - 06/2022</span>
+                        </div>
+                        <p class="text-sm text-gray-700 italic mb-3">Architectural refactoring and route optimization for Logidoo, a cross-border logistics platform serving African trade routes</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="pl-4 border-l-2 border-gray-200">Migrated the monolithic Express.js application to three independent NestJS microservices, cutting deployment coupling by 80% and lowering API response time from 750 ms to 320 ms</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Implemented Dijkstra's algorithm to optimize 500+ daily shipment routes, enabling cost reduction and faster delivery times for customers across 8 African countries.</li>
                         </ul>
                     </div>
 
@@ -125,11 +139,12 @@
                             </div>
                             <span class="text-sm text-gray-500">12/2020 - 03/2022</span>
                         </div>
+                        <p class="text-sm text-gray-700 italic mb-3">Development and refactoring of a multi-site management platform for an expanding bakery (Angular, Ionic, ExpressJS, MongoDB) Within a team of 3 developers, I evolved from a mobile developer role to full-stack responsibilities as the project grew:</p>
                         <ul class="space-y-2 text-sm text-gray-700">
-                            <li class="pl-4 border-l-2 border-gray-200">Built Ionic/Angular mobile app enabling 100+ bakery staff to manage daily tasks</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Orchestrated ETL migration of 50k+ records via Apache NiFi & Python</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Refactored stack for multi-site operations enhancing scalability</li>
-                            <li class="pl-4 border-l-2 border-gray-200">Implemented external POS sync achieving 99% transaction accuracy</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Developed the mobile application with Ionic and Angular for daily bakery management, enabling over 100 users to perform tasks</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Orchestrated data migration of 50,000+ records during expansion to 3 new sites: designed and implemented an ETL pipeline using Apache NiFi and Python scripts to ensure multi-site data consistency with 80% data integrity</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Refactored the backend and frontend to support a multi-site architecture, enhancing system scalability and maintainability</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Designed and implemented a data exchange architecture to synchronize transactions with an external Point of Sale and achieved 99% sync accuracy</li>
                         </ul>
                     </div>
                 </section>
@@ -165,15 +180,15 @@
                         </div>
                         <div>
                             <p class="font-semibold text-gray-700 mb-1">Backend Development</p>
-                            <p class="text-gray-600">Node JS, Express JS, Nest JS, Camunda, GraphQL, KeystoneJS, Microservices, Python, RabbitMQ, REST APIs, Strapi</p>
+                            <p class="text-gray-600">Node JS, Express JS, Nest JS, Camunda, GraphQL, KeystoneJS, Python, RabbitMQ, Strapi</p>
                         </div>
                         <div>
                             <p class="font-semibold text-gray-700 mb-1">DevOps & Infrastructure</p>
-                            <p class="text-gray-600">Ansible, Apache, AWS, Bitbucket Pipeline, Docker Swarm, ELK, Grafana, Jenkins, Nginx, Portainer, Prometheus, Terraform, Vagrant</p>
+                            <p class="text-gray-600">Ansible, Bitbucket Pipeline, Jenkins, Docker Swarm, Portainer, Nginx, AWS, Terraform, Vagrant, ELK, Grafana, Prometheus</p>
                         </div>
                         <div>
                             <p class="font-semibold text-gray-700 mb-1">Data & Storage</p>
-                            <p class="text-gray-600">Meilisearch, MongoDB, MySQL, PostgreSQL, Redis, Apache NiFi</p>
+                            <p class="text-gray-600">MongoDB, PostgreSQL, Meilisearch, Redis, Apache NiFi, Metabase</p>
                         </div>
                         <div>
                             <p class="font-semibold text-gray-700 mb-1">HealthTech</p>
@@ -187,15 +202,23 @@
                     <div class="space-y-3 text-sm">
                         <div>
                             <p class="font-semibold text-gray-900">Healthcare Interoperability</p>
-                            <p class="text-gray-600 text-xs">FHIR v4 architecture, custom facades, EMR interoperability at 95% accuracy</p>
+                            <p class="text-gray-600 text-xs">Designed and implemented FHIR v4-based data exchange architectures for EMR systems.</p>
                         </div>
                         <div>
-                            <p class="font-semibold text-gray-900">Workflow Automation</p>
-                            <p class="text-gray-600 text-xs">Camunda BPM, BPMN modeling, task routing, GIS overlays for land workflows</p>
+                            <p class="font-semibold text-gray-900">Digital Transformation & Business Process Automation</p>
+                            <p class="text-gray-600 text-xs">Design and implementation of BPMN workflows using Camunda 8, Built workflow-driven applications that accelerated task routing and approval cycles.</p>
                         </div>
                         <div>
-                            <p class="font-semibold text-gray-900">Platform Engineering</p>
-                            <p class="text-gray-600 text-xs">Nx monorepos, reusable component libraries, CI/CD pipelines, DevOps automation</p>
+                            <p class="font-semibold text-gray-900">Frontend Architecture & Scalable UI Systems</p>
+                            <p class="text-gray-600 text-xs">Built reusable component library with Storybook, architected and maintained Nx monorepos with shared libraries.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">DevOps</p>
+                            <p class="text-gray-600 text-xs">Implemented end-to-end CI/CD pipelines (Bitbucket, Jenkins) and Infrastructure as Code (Terraform, Ansible), Introduzed monitoring stacks (ELK, Grafana, Prometheus),Containerized applications with Docker Swarm and managed orchestration via Portainer.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Team Leadership & Developer Enablement</p>
+                            <p class="text-gray-600 text-xs">Mentored junior developers increasing team autonomy, Established coding standards and documentation, Led technical decision-making and architecture planning.</p>
                         </div>
                     </div>
                 </section>
