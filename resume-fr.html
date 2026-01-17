@@ -1,1 +1,233 @@
-En construction ...
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouhamadou Moustapha Gaye - CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="max-w-5xl mx-auto bg-white shadow-sm my-8 p-8 md:p-12">
+        <!-- Header -->
+        <header class="border-b border-gray-200 pb-6 mb-8">
+            <div class="flex justify-between items-start mb-4">
+                <div>
+                    <div class="">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-1">Curriculum Vitae</p>
+                        <div class="print:hidden flex gap-2 mb-6">
+                            <a href="./index.html" class="px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded transition">English</a>
+                            <a href="./resume-fr.html" class="px-4 py-2 text-sm bg-gray-100 hover:bg-gray-200 rounded transition">Français</a>
+                            <a href="./assets/resume-fr.pdf" download class="px-4 py-2 text-sm bg-blue-600 text-white hover:bg-blue-700 rounded transition">Télécharger PDF</a>
+                        </div>
+                    </div>
+                    <h1 class="text-4xl font-bold text-gray-900 mb-2">Mouhamadou Moustapha Gaye</h1>
+                    <p class="text-lg text-gray-600">Développeur Frontend Senior · Dakar, Sénégal</p>
+                </div>
+                <div class="text-right space-y-1 text-sm">
+                    <p class="text-gray-600">Dakar</p>
+                    <p class="text-gray-600">mouhamadoumoustaphagaye@esp.sn</p>
+                    <a href="https://github.com/warnerb47" class="text-blue-600 hover:underline">github.com/warnerb47</a>
+                </div>
+            </div>
+            
+            <p class="text-gray-700 leading-relaxed">
+                Développeur frontend avec une expérience de niveau senior dans la création d'applications web d'entreprise. J'ai livré une bibliothèque de composants de plus de 30 éléments UI Angular/Tailwind réutilisables, réduisant le temps de développement de 35% et assurant la cohérence du design. J'ai conçu et implémenté un échange de données basé sur FHIR pour un système EMR, atteignant 95% de précision des données sur plusieurs plateformes d'information de santé. Je cherche à appliquer mes compétences éprouvées en architecture frontend et en automatisation pour développer des produits scalables et de haute qualité.
+            </p>
+        </header>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Main Content -->
+            <div class="md:col-span-2 order-2 md:order-1">
+                <section class="mb-10">
+                    <h2 class="text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Expérience Professionnelle</h2>
+                    
+                    <!-- MODELSIS -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="font-bold text-gray-900">MODELSIS - SGF</h3>
+                                <p class="text-sm text-gray-600">Ingénieur Logiciel · Dakar</p>
+                            </div>
+                            <span class="text-sm text-gray-500">03/2024 - Présent</span>
+                        </div>
+                        <p class="text-sm text-gray-700 italic mb-3">Digitalisation et automatisation des processus métier de l'administration foncière via la modélisation de workflows BPMN et l'intégration GIS</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="pl-4 border-l-2 border-gray-200">Travail au sein d'une architecture monorepo Nx comprenant deux applications interconnectées et deux bibliothèques partagées, améliorant la réutilisation du code et la maintenabilité sur l'ensemble de la plateforme</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Développement et maintenance d'une bibliothèque de composants avec Storybook, créant plus de 30 composants réutilisables qui ont réduit le temps de développement des fonctionnalités de 35% et assuré 95% de cohérence du design entre les applications</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Développement d'une application web pour la gestion des workflows d'administration foncière, implémentant des processus complexes basés sur BPMN, qui ont accéléré le routage des tâches et réduit les délais de traitement</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Création d'une bibliothèque pour abstraire l'intégration du moteur BPM Camunda, permettant une orchestration fluide des workflows sur l'ensemble de la plateforme</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Modélisation de 15 processus métier d'administration foncière en utilisant BPMN, automatisant les workflows et réduisant le temps de traitement manuel de 7 jours à 48 heures</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Intégration de composants de Système d'Information Géographique (SIG) pour la visualisation des données spatiales et la gestion des parcelles foncières, permettant aux utilisateurs de visualiser et modifier les limites des parcelles directement dans la plateforme</li>
+                        </ul>
+                    </div>
+
+                    <!-- MEDSEN -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="font-bold text-gray-900">MEDSEN</h3>
+                                <p class="text-sm text-gray-600">Lead Frontend · Dakar</p>
+                            </div>
+                            <span class="text-sm text-gray-500">03/2023 - 03/2024</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="pl-4 border-l-2 border-gray-200">Direction d'une équipe frontend de 2 développeurs et développement de l'application EMR avec Angular et Tailwind, suivant le standard FHIR v4, ce qui a permis une gestion standardisée des données patients dans tout le système</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Conception et implémentation d'une architecture d'échange de données FHIR avec une façade personnalisée supportant 3 types de ressources FHIR (Patient, Observation et Encounter), interopérabilité avec 2 systèmes d'information de santé externes avec 95% de précision des données</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Mentorat de 2 développeurs (junior mobile, mid-level web) via des revues de code et du pair programming, accélérant leur livraison autonome de 60% en 3 mois</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Optimisation du cycle de développement logiciel en introduisant les meilleures pratiques, les revues de code et des processus de déploiement rationalisés avec Terraform, résultant en des cycles de release plus rapides et moins de défauts</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Développement de plus de 30 composants Angular/Tailwind réutilisables, réduisant le temps de développement UI et améliorant les performances frontend, ce qui a permis des interactions utilisateur plus fluides</li>
+                        </ul>
+                    </div>
+
+                    <!-- LOGIKA -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="font-bold text-gray-900">TEAMXGROUP - Logika</h3>
+                                <p class="text-sm text-gray-600">Lead Developer · Dakar</p>
+                            </div>
+                            <span class="text-sm text-gray-500">12/2022 - 02/2023</span>
+                        </div>
+                        <p class="text-sm text-gray-700 italic mb-3">Leadership technique et conception d'architecture pour le projet Logika, gestion d'une équipe de 3 développeurs (1 backend mid-level, 2 frontend junior)</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="pl-4 border-l-2 border-gray-200">Définition de la stack technologique complète (Angular, Node.js, MongoDB) et conception d'une architecture monolithique répondant aux exigences du projet, permettant une base de code unifiée et simplifiant l'intégration entre les équipes</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Établissement de standards de développement et de workflows : initialisation de la structure du projet, implémentation de la stratégie de branchement Git et mise en place de pipelines CI/CD pour assurer une qualité de code cohérente</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Création d'une base de documentation technique en utilisant Docusaurus, créant une base de connaissances pour l'onboarding et le maintien des meilleures pratiques de développement</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Mentorat de 2 développeurs frontend junior via des revues de code et du pair programming, réduisant leur temps de traitement des PR de 50% et permettant une livraison indépendante des fonctionnalités en 2 mois</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Fourniture d'un support technique continu et de conseils architecturaux pour assurer l'alignement de l'équipe et la livraison du projet</li>
+                        </ul>
+                    </div>
+
+                    <!-- LOGIDOO DevOps -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="font-bold text-gray-900">XFactory - Logidoo</h3>
+                                <p class="text-sm text-gray-600">DevOps · Dakar</p>
+                            </div>
+                            <span class="text-sm text-gray-500">06/2022 - 11/2022</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="pl-4 border-l-2 border-gray-200">Intégration de pratiques DevOps dans le processus de développement, améliorant la vitesse de déploiement de 60% grâce à l'implémentation d'IaC et de CI/CD en 4 mois</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Amélioration de la fiabilité du système en implémentant des solutions de monitoring complètes, résultant en une réduction de 30% du temps d'arrêt en 2 mois</li>
+                        </ul>
+                    </div>
+
+                    <!-- LOGIDOO Backend Developer -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="font-bold text-gray-900">XFactory - Logidoo</h3>
+                                <p class="text-sm text-gray-600">Développeur Backend · Dakar</p>
+                            </div>
+                            <span class="text-sm text-gray-500">03/2022 - 06/2022</span>
+                        </div>
+                        <p class="text-sm text-gray-700 italic mb-3">Refactoring architectural et optimisation des routes pour Logidoo, une plateforme logistique transfrontalière desservant les routes commerciales africaines</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="pl-4 border-l-2 border-gray-200">Migration de l'application monolithique Express.js vers trois microservices NestJS indépendants, réduisant le couplage de déploiement de 80% et diminuant le temps de réponse API de 750 ms à 320 ms</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Implémentation de l'algorithme de Dijkstra pour optimiser plus de 500 routes d'expédition quotidiennes, permettant une réduction des coûts et des délais de livraison plus rapides pour les clients dans 8 pays africains</li>
+                        </ul>
+                    </div>
+
+                    <!-- MBURU -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="font-bold text-gray-900">XFactory - Mburu</h3>
+                                <p class="text-sm text-gray-600">Développeur Full-Stack · Dakar</p>
+                            </div>
+                            <span class="text-sm text-gray-500">12/2020 - 03/2022</span>
+                        </div>
+                        <p class="text-sm text-gray-700 italic mb-3">Développement et refactoring d'une plateforme de gestion multi-sites pour une boulangerie en expansion (Angular, Ionic, ExpressJS, MongoDB). Au sein d'une équipe de 3 développeurs, j'ai évolué d'un rôle de développeur mobile vers des responsabilités full-stack au fur et à mesure de la croissance du projet :</p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="pl-4 border-l-2 border-gray-200">Développement de l'application mobile avec Ionic et Angular pour la gestion quotidienne de la boulangerie, permettant à plus de 100 utilisateurs d'effectuer leurs tâches</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Orchestration de la migration de données de plus de 50 000 enregistrements lors de l'expansion vers 3 nouveaux sites : conception et implémentation d'un pipeline ETL utilisant Apache NiFi et des scripts Python pour assurer la cohérence des données multi-sites avec 80% d'intégrité des données</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Refactoring du backend et du frontend pour supporter une architecture multi-sites, améliorant la scalabilité et la maintenabilité du système</li>
+                            <li class="pl-4 border-l-2 border-gray-200">Conception et implémentation d'une architecture d'échange de données pour synchroniser les transactions avec un Point de Vente externe et atteinte de 99% de précision de synchronisation</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Formation</h2>
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <p class="font-bold text-gray-900">Diplôme d'Ingénieur de Conception en Informatique DIC</p>
+                            <p class="text-gray-600">École Supérieure Polytechnique · 01/2022</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Diplôme Supérieur de Technologie en Informatique DSTI</p>
+                            <p class="text-gray-600">École Supérieure Polytechnique · 01/2019</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Baccalauréat Série S1</p>
+                            <p class="text-gray-600">Cours Privés Seydina Mandione Laye · 01/2017</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="md:col-span-1 order-1 md:order-2">
+
+                <section class="mb-8">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Compétences</h2>
+                    <div class="space-y-3 text-xs">
+                        <div>
+                            <p class="font-semibold text-gray-700 mb-1">Développement Frontend</p>
+                            <p class="text-gray-600">Angular, Tailwind CSS, RXJS, Nx, Storybook, Jest, Redux, Flutter, Ionic</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-700 mb-1">Développement Backend</p>
+                            <p class="text-gray-600">Node JS, Express JS, Nest JS, Camunda, GraphQL, KeystoneJS, Python, RabbitMQ, Strapi</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-700 mb-1">DevOps & Infrastructure</p>
+                            <p class="text-gray-600">Ansible, Bitbucket Pipeline, Jenkins, Docker Swarm, Portainer, Nginx, AWS, Terraform, Vagrant, ELK, Grafana, Prometheus</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-700 mb-1">Données & Stockage</p>
+                            <p class="text-gray-600">MongoDB, PostgreSQL, Meilisearch, Redis, Apache NiFi, Metabase</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-700 mb-1">HealthTech</p>
+                            <p class="text-gray-600">FHIR, HL7, Open Concept Lab, OpenMRS</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Domaines d'Expertise</h2>
+                    <div class="space-y-3 text-sm">
+                        <div>
+                            <p class="font-semibold text-gray-900">Interopérabilité Santé</p>
+                            <p class="text-gray-600 text-xs">Conception et implémentation d'architectures d'échange de données basées sur FHIR v4 pour les systèmes EMR.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Transformation Digitale & Automatisation des Processus Métier</p>
+                            <p class="text-gray-600 text-xs">Conception et implémentation de workflows BPMN utilisant Camunda 8, développement d'applications pilotées par des workflows qui ont accéléré le routage des tâches et les cycles d'approbation.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Architecture Frontend & Systèmes UI Scalables</p>
+                            <p class="text-gray-600 text-xs">Développement de bibliothèques de composants réutilisables avec Storybook, architecture et maintenance de monorepos Nx avec bibliothèques partagées.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">DevOps</p>
+                            <p class="text-gray-600 text-xs">Implémentation de pipelines CI/CD de bout en bout (Bitbucket, Jenkins) et Infrastructure as Code (Terraform, Ansible), introduction de stacks de monitoring (ELK, Grafana, Prometheus), conteneurisation d'applications avec Docker Swarm et gestion de l'orchestration via Portainer.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Leadership d'Équipe & Autonomisation des Développeurs</p>
+                            <p class="text-gray-600 text-xs">Mentorat de développeurs junior augmentant l'autonomie de l'équipe, établissement de standards de code et de documentation, direction de la prise de décision technique et de la planification d'architecture.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <footer class="print:hidden mt-12 pt-6 border-t border-gray-200 text-center text-xs text-gray-500">
+            © 2026 warnerb47
+        </footer>
+    </div>
+</body>
+</html>
